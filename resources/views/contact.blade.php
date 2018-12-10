@@ -29,12 +29,12 @@
 		<!-- Navigation -->
 		<nav class="main_nav justify-self-end text-right">
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About Us</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li class="active"><a href="#">Contact</a></li>
+				<li><a href="{{ route('inicio') }}">Inicio</a></li>
+				<li><a href="{{ route('about') }}">Acerca de Nosotros</a></li>
+				<li><a href="{{ route('services') }}">Servicios</a></li>
+				<li><a href="{{ route('portafolio') }}">Portfolio</a></li>
+				<li><a href="{{ route('blog') }}">Blodddg</a></li>
+				<li class="active"><a href="{{ route('contacto') }}">Contacto</a></li>
 			</ul>
 			
 			<!-- Search -->

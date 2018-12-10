@@ -20,4 +20,19 @@ class PageController extends Controller
     {
     	return view("blog");
     }
+
+    public function portafolio()
+    {
+    	return view("portfolio");
+    }
+
+    public function services()
+    {
+    	return view("services");
+    }
+
+    public function about()
+    {
+    	return view("about");
+    }
 }
