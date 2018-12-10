@@ -10,18 +10,18 @@
 		
 		<!-- Logo -->
 		<div class="logo mr-auto">
-			<a href="#">Solexvintel<span>VA</span></a>
+			<a href="{{ route('inicio') }}">Solexvintel<span>VA</span></a>
 		</div>
 
 		<!-- Navigation -->
 		<nav class="main_nav justify-self-end text-right">
 			<ul>
-				<li class="active"><a href="#">Inicio</a></li>
+				<li class="active"><a href="{{ route('inicio') }}">Inicio</a></li>
 				<li><a href="about.html">Acerca de Nosotros</a></li>
 				<li><a href="services.html">Servicios</a></li>
 				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contacto</a></li>
+				<li><a href="{{ route('blog') }}">Blog</a></li>
+				<li><a href="{{ route('contacto') }}">Contacto</a></li>
 			</ul>
 			
 			<!-- Search -->
@@ -84,16 +84,17 @@
 		<div class="menu menu_mm text-right">
 			<div class="menu_close"><i class="far fa-times-circle trans_200"></i></div>
 			<ul class="menu_mm">
-				<li class="menu_mm active"><a href="#">Inicio</a></li>
+				<li class="menu_mm active"><a href="{{ route('inicio') }}">Inicio</a></li>
 				<li class="menu_mm"><a href="about.html">Acerca de Nosotros</a></li>
 				<li class="menu_mm"><a href="services.html">Servicios</a></li>
 				<li class="menu_mm"><a href="portfolio.html">Portfolio</a></li>
-				<li class="menu_mm"><a href="blog.html">Blog</a></li>
-				<li class="menu_mm"><a href="contact.html">Contacto</a></li>
+				<li class="menu_mm"><a href="{{ route('blog') }}">Blodddg</a></li>
+				<li class="menu_mm"><a href="{{ route('contacto') }}">Contacto</a></li>
 			</ul>
 		</div>
 	</div>
-
+    <!--layoutmark 
+    -->
 	<!-- Home -->
 
 	<div class="home">
@@ -683,7 +684,7 @@
 
 						<!-- Logo -->
 						<div class="logo footer_logo">
-							<a href="#">Ran<span>go</span></a>
+							<a href="#">Solex<span>Vintel</span></a>
 						</div>
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae enim enim. Sed nec dignissim purus.</p>

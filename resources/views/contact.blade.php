@@ -165,7 +165,7 @@
 								</div>
 								<div>
 									<button id="reply_form_submit" type="submit" class="reply_submit_btn trans_300" value="Submit">
-										send reply
+										Enviar
 									</button>
 								</div>
 

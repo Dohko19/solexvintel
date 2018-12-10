@@ -94,7 +94,7 @@
 			<div class="row">
 				<div class="col">
 					<!-- Copyright -->
-					<div class="footer_cr_2">2017 All rights reserved</div>
+					<div class="footer_cr_2">2018 All rights reserved</div>
 				</div>
 			</div>
 		</div>
