@@ -88,7 +88,7 @@
 				<li class="menu_mm"><a href="{{ route('about') }}">Acerca de Nosotros</a></li>
 				<li class="menu_mm"><a href="{{ route('services') }}">Servicios</a></li>
 				<li class="menu_mm"><a href="{{ route('portafolio') }}">Portfolio</a></li>
-				<li class="menu_mm"><a href="{{ route('blog') }}">Blodddg</a></li>
+				<li class="menu_mm"><a href="{{ route('blog') }}">Blog</a></li>
 				<li class="menu_mm"><a href="{{ route('contacto') }}">Contacto</a></li>
 			</ul>
 		</div>
@@ -648,7 +648,7 @@
 
 						<!-- Newsletter Title -->
 						<div class="newsletter_title">
-							<h1>Subscribe to our newsletter</h1>
+							<h1>Suscribete a nuestras noticias</h1>
 							<span>Cursus, enim a ultrices venenatis, ante magna varius.</span>
 						</div>
 						
@@ -656,7 +656,7 @@
 						<div class="newsletter_form_container">
 							<form action="#">
 								<div class="input-group">
-									<input type="email" class="newsletter_email" placeholder="Your e-mail address here" required="required" data-error="Valid email address is required.">
+									<input type="email" class="newsletter_email" placeholder="Escribe tu e-mail" required="required" data-error="Valid email address is required.">
 									<button id="newsletter_form_submit" type="submit" class="button newsletter_submit_button trans_200" value="Submit">
 										subscribe
 									</button>
@@ -687,7 +687,7 @@
 							<a href="#">Solex<span>Vintel</span></a>
 						</div>
 
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae enim enim. Sed nec dignissim purus.</p>
+						<p>Soluciones expertas en vision artificial.</p>
 						
 						<!-- Social -->
 						<div class="footer_social">

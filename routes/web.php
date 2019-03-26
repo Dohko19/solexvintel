@@ -6,3 +6,4 @@ Route::get('/blog', 'PageController@blog')->name('blog');
 Route::get('/portafolio', 'PageController@portafolio')->name('portafolio');
 Route::get('/servicios', 'PageController@services')->name('services');
 Route::get('/acercadenosotros', 'PageController@about')->name('about');
+Route::resource('solexvintel','PageController');

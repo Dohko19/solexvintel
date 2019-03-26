@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>RanGO - Contact</title>
+<title>SolexVintel - Contacto</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="RanGO Project">
@@ -18,12 +18,12 @@
 <div class="super_container">
 	
 	<!-- Header -->
-
+	
 	<header class="header d-flex flex-row justify-content-end align-items-center trans_200">
 		
 		<!-- Logo -->
 		<div class="logo mr-auto">
-			<a href="#">Ran<span>go</span></a>
+			<a href="#">SolexVintel<span>VA</span></a>
 		</div>
 
 		<!-- Navigation -->
@@ -33,7 +33,7 @@
 				<li><a href="{{ route('about') }}">Acerca de Nosotros</a></li>
 				<li><a href="{{ route('services') }}">Servicios</a></li>
 				<li><a href="{{ route('portafolio') }}">Portfolio</a></li>
-				<li><a href="{{ route('blog') }}">Blodddg</a></li>
+				<li><a href="{{ route('blog') }}">Blog</a></li>
 				<li class="active"><a href="{{ route('contacto') }}">Contacto</a></li>
 			</ul>
 			
@@ -97,12 +97,12 @@
 		<div class="menu menu_mm text-right">
 			<div class="menu_close"><i class="far fa-times-circle trans_200"></i></div>
 			<ul class="menu_mm">
-				<li class="menu_mm"><a href="index.html">Home</a></li>
-				<li class="menu_mm"><a href="about.html">About Us</a></li>
-				<li class="menu_mm"><a href="services.html">Services</a></li>
-				<li class="menu_mm"><a href="portfolio.html">Portfolio</a></li>
-				<li class="menu_mm"><a href="blog.html">Blog</a></li>
-				<li class="menu_mm active"><a href="#">Contact</a></li>
+				<li class="menu_mm">{{ route('inicio') }}">Inicio</a></li>
+				<li class="menu_mm"><a href="{{ route('about') }}">Acerca de Nosotros</a></li>
+				<li class="menu_mm"><a href="{{ route('services') }}">Servicios</a></li>
+				<li class="menu_mm"><a href="{{ route('portafolio') }}">Portafolio</a></li>
+				<li class="menu_mm"><a href="{{ route('blog') }}">Blog</a></li>
+				<li class="menu_mm active"><a href="{{ route('contacto') }}">Contacto</a></li>
 			</ul>
 		</div>
 	</div>
@@ -129,7 +129,11 @@
 	<!-- Contact -->
 
 	<div class="contact">
-		
+		@if(session()->has('info'))
+			<div class="alert alert-success" role="alert">
+				Tu mensaje a sido enviado.
+			</div>
+		@endif
 		<div class="container">
 			
 			<!-- Google Map Container -->
@@ -151,20 +155,22 @@
 
 					<div class="reply">
 						
-						<div class="reply_title">Leave a reply</div>
+						<div class="reply_title">Deja un comentario, sugerencia o queja</div>
 						<div class="reply_form_container">
 							
 							<!-- Reply Form -->
+							
 
-							<form id="reply_form" action="post">
+							<form id="reply_form" method="POST" action="{{ route('solexvintel.store') }}">
+								{!! csrf_field() !!}
 								<div>
-									<input id="reply_form_name" class="input_field reply_form_name" type="text" placeholder="Name" required="required" data-error="Name is required.">
-									<input id="reply_form_email" class="input_field reply_form_email" type="email" placeholder="E-mail" required="required" data-error="Valid email is required.">
-									<input id="reply_form_subject" class="input_field reply_form_subject" type="text" placeholder="Subject" required="required" data-error="Subject is required.">
-									<textarea id="reply_form_message" class="text_field reply_form_message" name="message"  placeholder="Message" rows="4" required data-error="Please, write us a message."></textarea>
+									<input id="reply_form_name" class="input_field reply_form_name" type="text" placeholder="Nombre" name="nombre" required="required" data-error="Nombre Obligatorio.">
+									<input id="reply_form_email" class="input_field reply_form_email" type="email" placeholder="E-mail" name="email" required="required" data-error="Introduzca un E-mail valido.">
+									<input id="reply_form_subject" class="input_field reply_form_subject" type="text" placeholder="Asunto" name="asunto" required="required" data-error="Escriba el Asunto.">
+									<textarea id="reply_form_message" class="text_field reply_form_message" name="message"  placeholder="Mensaje" rows="4" required data-error="Por favor, escriba un mensaje."></textarea>
 								</div>
 								<div>
-									<button id="reply_form_submit" type="submit" class="reply_submit_btn trans_300" value="Submit">
+									<button id="reply_form_submit" type="submit" class="reply_submit_btn trans_300" value="enviar">
 										Enviar
 									</button>
 								</div>
@@ -182,23 +188,24 @@
 
 					<div class="contact_info">
 
-						<div class="contact_title">Contact info</div>
+						<div class="contact_title">Informacion de Contacto</div>
 						
 						<div class="contact_info_container">
 
 							<div class="logo contact_logo">
-								<a href="#">Ran<span>go</span></a>
+								<a href="#">SolexVintel<span>VA</span></a>
 							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae enim enim. Sed nec dignissim purus.</p>
+							<p>Soluciones expertas en vision artificial.</p>
 
 							<div class="address_container clearfix">
 								<div class="contact_info_icon">i</div>
 								<div class="contact_info_content">
 									<ul>
-										<li class="address">C/ Libertad, 34</li>
-										<li class="city">05200 Arévalo</li>
-										<li class="phone">0034 37483 2445 322</li>
-										<li class="email">hello@company.com</li>
+										<li class="address">Camino Real de Tetelpal, 180</li>
+										<li class="city">01790, Alvaro Obregon</li>
+										<li class="phone">(55) 52-92-92-03</li>
+										<li class="phone">(55) 52-92-43-00</li>
+										<li class="email">comercial@solexvintel.com.mx</li>
 									</ul>									
 								</div>
 							</div>
@@ -226,10 +233,10 @@
 
 						<!-- Logo -->
 						<div class="logo footer_logo">
-							<a href="#">Ran<span>go</span></a>
+							<a href="#">SolexVintel<span>VA</span></a>
 						</div>
 
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae enim enim. Sed nec dignissim purus.</p>
+						<p>Soluciones experta en vision artificial.</p>
 						
 						<!-- Social -->
 						<div class="footer_social">
@@ -245,7 +252,7 @@
 						
 						<!-- Copyright -->
 						<div class="footer_cr"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> <a href="#" target="_blank"></a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
 
 					</div>
@@ -253,7 +260,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				</div>
 				
 				<!-- Footer Services -->
-				<div class="col-lg-2">
+				{{-- <div class="col-lg-2">
 
 					<div class="footer_col">
 						<div class="footer_col_title">Services</div>
@@ -273,7 +280,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						</ul>
 					</div>
 
-				</div>
+				</div> --}}
 
 				<!-- Footer Menu -->
 				<div class="col-lg-2">
@@ -281,22 +288,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					<div class="footer_col">
 						<div class="footer_col_title">Menu</div>
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About us</a></li>
-							<li><a href="services.html">Services</a></li>
-							<li><a href="portfolio.html">Portfolio</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Testimonials</a></li>
-						</ul>
-					</div>
-
-				</div>
-
-				<!-- Footer About -->
-				<div class="col-lg-2">
-
-					<div class="footer_col">
+							<li><a href="{{ route('inicio') }}">Inicio</a></li>
+							<li><a href="{{ route('about') }}">Acerca de nosotros</a></li>
+							<li><a href="{{ route('services') }}">Servicios</a></li>
+							<li><a href="{{ route('portafolio') }}">Portfolio</a></li>
+							<li><a href="{{ route('blog') }}">Blog</a></li>
+ 
+					{{-- <div class="footer_col">
 						<div class="footer_col_title">About us</div>
 						<ul>
 							<li><a href="#">The team</a></li>
@@ -324,11 +322,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				</div>
 
 			</div>
-
+ --}}
 			<div class="row">
 				<div class="col">
 					<!-- Copyright -->
-					<div class="footer_cr_2">2017 All rights reserved</div>
+					<div class="footer_cr_2">{{ date('Y') }} All rights reserved</div>
 				</div>
 			</div>
 		</div>

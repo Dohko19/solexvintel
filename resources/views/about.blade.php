@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>RanGO - About</title>
+<title>SolexVintel - Acerca de Nosotros</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="RanGO Project">
@@ -26,18 +26,18 @@
 		
 		<!-- Logo -->
 		<div class="logo mr-auto">
-			<a href="#">Ran<span>go</span></a>
+			<a href="#">SolexVintel<span>VA</span></a>
 		</div>
 
 		<!-- Navigation -->
 		<nav class="main_nav justify-self-end text-right">
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li class="active"><a href="#">About Us</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="{{ route('inicio') }}">Inicio</a></li>
+				<li class="active"><a href="{{ route('about') }}">Acerca de Nosotros</a></li>
+				<li><a href="{{ route('services') }}">Servicios</a></li>
+				<li><a href="{{ route('portafolio') }}">Portfolio</a></li>
+				<li><a href="{{ route('blog') }}">Blog</a></li>
+				<li><a href="{{ route('contacto') }}">Contacto</a></li>
 			</ul>
 			
 			<!-- Search -->
@@ -100,13 +100,12 @@
 		<div class="menu menu_mm text-right">
 			<div class="menu_close"><i class="far fa-times-circle trans_200"></i></div>
 			<ul class="menu_mm">
-				<li class="menu_mm"><a href="index.html">Home</a></li>
-				<li class="menu_mm active"><a href="about.html">About Us</a></li>
-				<li class="menu_mm"><a href="services.html">Services</a></li>
-				<li class="menu_mm"><a href="portfolio.html">Portfolio</a></li>
-				<li class="menu_mm"><a href="blog.html">Blog</a></li>
-				<li class="menu_mm"><a href="contact.html">Contact</a></li>
-			</ul>
+				<li class="menu_mm">{{ route('inicio') }}">Inicio</a></li>
+				<li class="menu_mm active"><a href="{{ route('about') }}">Acerca de Nosotros</a></li>
+				<li class="menu_mm"><a href="{{ route('services') }}">Servicios</a></li>
+				<li class="menu_mm"><a href="{{ route('services') }}">Servicios</a></li>
+				<li class="menu_mm"><a href="{{ route('blog') }}">Blog</a></li>
+				<li class="menu_mm"><a href="{{ route('contacto') }}">Contacto</a></li>			</ul>
 		</div>
 	</div>
 
@@ -118,7 +117,7 @@
 		</div>
 		
 		<div class="home_title">
-			<h2>About us</h2>
+			<h2>Acerca de Nosotros</h2>
 			<div class="next_section_scroll">
 				<div class="next_section nav_links" data-scroll-to=".icon_boxes">
 					<i class="fas fa-chevron-down trans_200"></i>
@@ -136,27 +135,51 @@
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="icon_box_title">
-						<h1>A strong team with a strong background</h1>
+						<h1>Un fuerte equipo con un gran respaldo</h1>
 					</div>
 					<div class="button icon_box_button trans_200">
-						<a href="#" class="trans_200">discover more</a>
+							<a data-toggle="modal" data-target="#exampleModal" href="#" class="trans_200">Descubrir más</a>
 					</div>
+				</div>
+
+				<div class="col-lg-4 icon_box_col">
+				
+				{{-- Modal for button more --}}
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Acerca de Solexvintel</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				       
+
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+					<!-- Icon Box Item -->
+					<div class="icon_box_paragraph">
+						<p>Misión: Ser una empresa de visión artificial que, mediante el desarrollo de soluciones avanzadas para la automatización de procesos de gran valor añadido, le proporcione a nuestro cliente una ventaja competitiva en el mercado. <br><br>
+						Visión: Solucionar con aplicaciones de alta tecnología en procesos de visión artificial, las diferentes necesidades de los sectores productivos y gubernamentales, mejorando cualitativamente su posición competitiva en los mercados globales.</p>
+						<p>También desarrollamos soluciones que faciliten al sector médico el diagnóstico oportuno de ciertas enfermedades tales como un dispositivo nano-óptico para la detección temprana de Dengue, Zika y Chikungunya. Actualmente se encuentra en desarrollo un dispositivo no invasivo para la medición de glucosa, así como también un identificador biométrico.</p>
+					</div>
+
 				</div>
 
 				<div class="col-lg-4 icon_box_col">
 
 					<!-- Icon Box Item -->
 					<div class="icon_box_paragraph">
-						<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae enim enim. Sed nec dignissim purus. Praesent bibendum tristique nulla, quis fringilla mauris sagittis ut. Maecenas sit amet varius nulla. Praesent faucibus ipsum.</p>
-					</div>
-
-				</div>
-
-				<div class="col-lg-4 icon_box_col">
-
-					<!-- Icon Box Item -->
-					<div class="icon_box_paragraph">
-						<p>Si non ligula sodales vestibulum. Nam nec augue a leo ullamcorper sollicitudin. Suspendisse mattis malesuada tortor sit amet accumsan. Mauris eu elit quis enim pretium finibus. Integer tempor, augue et lacinia cursus, nisl elit elementum magna, non blandit nisi ipsum vitae nulla. </p>
+						<p>En SolexVintel desarrollamos soluciones de visión artificial que impulsen el desarrollo de la industria 4.0 en diferentes sectores, entre ellos:  el alimenticio y el médico.
+						En proyectos consolidados en México en la aplicación de visión artificial, SolexVintel tiene en operación soluciones en el sector alimenticio en las industrias cárnica, panificadora y agroindustrial.</p>
+						<p>SolexVintel es una empresa mexicana que nace de la experiencia de Solex Visión Artificial España, la cual ha desarrollado soluciones en visión artificial por más de quince años. SolexVintel une sus esfuerzos a los de otras empresas de alta tecnología para el desarrollo de dichas soluciones en la industria europea. En mayo de 2013, empresarios comprometidos con la innovación tecnológica en América Latina conjuntan esfuerzos y deciden fundar en México la empresa SolexVintel, con el propósito de fomentar el desarrollo tecnológico y utilizar la innovación para estimular la competitividad de la industria local en el entorno global. <br><br>A la fecha, contamos con un gran número de algoritmos propios de visión artificial y sobre esta plataforma hemos desarrollado soluciones de alta tecnología.</p> 
 					</div>
 					
 				</div>
@@ -165,7 +188,7 @@
 	</div>
 
 	<!-- Vertical Slider Section -->
-
+{{-- 
 	<div class="v_slider_section">
 		<div class="container fill_height">
 			<div class="row fill_height">
@@ -299,11 +322,11 @@
 
 			</div>
 		</div>
-	</div>
+	</div> --}}
 
 	<!-- Team -->
 
-	<div class="team">
+	{{-- <div class="team">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-10 offset-lg-1 text-lg-center text-left team_title">
@@ -311,10 +334,10 @@
 					<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pelle ntesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut.  Vestibulum est mattis effic Nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut.  </p>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row"> --}}
 				
 				<!-- Team Item -->
-				<div class="col-xl-3 col-lg-4 offset-xl-1 team_col">
+			{{-- 	<div class="col-xl-3 col-lg-4 offset-xl-1 team_col">
 					<div class="team_container trans_200">
 						<div class="team_member_image"><img src="images/team_1.jpg" alt=""></div>
 						<div class="team_member_content">
@@ -324,10 +347,10 @@
 							<div class="team_member_link"><a href="#">read more</a></div>
 						</div>
 					</div>
-				</div>
+				</div> --}}
 				
 				<!-- Team Item -->
-				<div class="col-xl-3 col-lg-4 offset-xl-1 team_col">
+				{{-- <div class="col-xl-3 col-lg-4 offset-xl-1 team_col">
 					<div class="team_container trans_200">
 						<div class="team_member_image"><img src="images/team_2.jpg" alt=""></div>
 						<div class="team_member_content">
@@ -337,10 +360,10 @@
 							<div class="team_member_link"><a href="#">read more</a></div>
 						</div>
 					</div>
-				</div>
+				</div> --}}
 				
 				<!-- Team Item -->
-				<div class="col-xl-3 col-lg-4 offset-xl-1 team_col">
+				{{-- <div class="col-xl-3 col-lg-4 offset-xl-1 team_col">
 					<div class="team_container trans_200">
 						<div class="team_member_image"><img src="images/team_3.jpg" alt=""></div>
 						<div class="team_member_content">
@@ -354,11 +377,11 @@
 
 			</div>
 		</div>
-	</div>
+	</div> --}}
 
 	<!-- Clients -->
 
-	<div class="clients">
+	{{-- <div class="clients">
 		<!-- Clients Slider -->
 
 		<div class="clients_slider_container">
@@ -401,7 +424,7 @@
 
 			</div>
 		</div>
-	</div>
+	</div> --}}
 
 	<!-- Newsletter -->
 
@@ -449,10 +472,10 @@
 
 						<!-- Logo -->
 						<div class="logo footer_logo">
-							<a href="#">Ran<span>go</span></a>
+							<a href="#">Solexvintel<span>VA</span></a>
 						</div>
 
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae enim enim. Sed nec dignissim purus.</p>
+						<p>Solexvintel Soluciones expertas en vision artificial</p>
 						
 						<!-- Social -->
 						<div class="footer_social">
@@ -551,7 +574,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			<div class="row">
 				<div class="col">
 					<!-- Copyright -->
-					<div class="footer_cr_2">2017 All rights reserved</div>
+					<div class="footer_cr_2">2019 All rights reserved</div>
 				</div>
 			</div>
 		</div>

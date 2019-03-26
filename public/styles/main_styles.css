@@ -153,7 +153,7 @@ h6::selection
 	font-size: 14px !important;
 	font-style: italic !important;
 	font-weight: 400 !important;
-	color: #9988ba !important;
+	color: #f8f0f0 !important;
 }
 :-moz-placeholder /* older Firefox*/
 {
@@ -273,7 +273,7 @@ section
 	height: 54px;
 	width: 174px;
 	text-align: center;
-	border: solid 2px #452b78;
+	border: solid 2px #fff;
 	background: transparent;
 }
 .button a
@@ -602,7 +602,7 @@ section
 	right: 285px;
 	width: 865px;
 	height: 236px;
-	background: #301b55;
+	background: #1664d8cc;
 	z-index: 9;
 	transform-origin: top right;
 	-webkit-transform: rotate(-90deg);
@@ -1409,7 +1409,7 @@ section
 .newsletter
 {
 	width: 100%;
-	background: #1b0d37;
+	background: #098678;
 }
 .newsletter_content
 {
@@ -1439,7 +1439,7 @@ section
 .newsletter_email
 {
 	height: 53px;
-	background: #452b78;
+	background: #0fcbb6;
 	border: none;
 	padding-left: 30px;
 	width: calc(100% - 174px - 26px);
@@ -1461,7 +1461,7 @@ section
 }
 .newsletter_submit_button:hover
 {
-	background: #452b78;
+	background: #0fb19f;
 }
 .newsletter_submit_button:focus
 {

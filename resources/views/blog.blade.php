@@ -29,12 +29,12 @@
 		<!-- Navigation -->
 		<nav class="main_nav justify-self-end text-right">
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About Us</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li class="active"><a href="#">Blog</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="{{ route('inicio') }}">Inicio</a></li>
+				<li><a href="{{ route('about') }}">Acerca de Nosotros</a></li>
+				<li><a href="{{ route('services') }}">Servicios</a></li>
+				<li><a href="{{ route('portafolio') }}">Portfolio</a></li>
+				<li class="active"><a href="{{ route('blog') }}">Blog</a></li>
+				<li><a href="{{ route('contacto') }}">Contacto</a></li>
 			</ul>
 			
 			<!-- Search -->
@@ -97,12 +97,12 @@
 		<div class="menu menu_mm text-right">
 			<div class="menu_close"><i class="far fa-times-circle trans_200"></i></div>
 			<ul class="menu_mm">
-				<li class="menu_mm"><a href="index.html">Home</a></li>
-				<li class="menu_mm"><a href="about.html">About Us</a></li>
-				<li class="menu_mm"><a href="services.html">Services</a></li>
-				<li class="menu_mm"><a href="portfolio.html">Portfolio</a></li>
-				<li class="menu_mm active"><a href="blog.html">Blog</a></li>
-				<li class="menu_mm"><a href="contact.html">Contact</a></li>
+				<li class="menu_mm">{{ route('inicio') }}">Inicio</a></li>
+				<li class="menu_mm"><a href="{{ route('about') }}">Acerca de Nosotros</a></li>
+				<li class="menu_mm"><a href="{{ route('services') }}">Servicios</a></li>
+				<li class="menu_mm"><a href="{{ route('services') }}">Servicios</a></li>
+				<li class="menu_mm active"><a href="{{ route('blog') }}">Blog</a></li>
+				<li class="menu_mm"><a href="{{ route('contacto') }}">Contacto</a></li>
 			</ul>
 		</div>
 	</div>
